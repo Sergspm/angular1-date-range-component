@@ -1,0 +1,20 @@
+<script>/** @var {McDatesController} $ctrl */</script>
+<md-content layout-padding ng-cloak>
+	<div layout-gt-xs="row">
+		<div flex-sm>
+			<label class="com-mc-dates__label">с</label>
+			<md-datepicker ng-model="$ctrl.dateFrom" md-max-date="$ctrl.maxDate" ng-change="$ctrl.minDateChanged()"></md-datepicker>
+		</div>
+		<div flex-sm>
+			<label class="com-mc-dates__label">по</label>
+			<md-datepicker ng-model="$ctrl.dateTo" md-min-date="$ctrl.minDate" ng-change="$ctrl.maxDateChanged()"></md-datepicker>
+		</div>
+	</div>
+	<div class="com-mc-dates__ranges">
+		<a class="com-mc-dates__range" ng-click="$ctrl.setYesterdayRange()">Вчера</a>
+		<a class="com-mc-dates__range" ng-click="$ctrl.setTodayRange()">Сегодня</a>
+		<a class="com-mc-dates__range" ng-click="$ctrl.setTwoWeeksRange()">2 недели</a>
+		<a class="com-mc-dates__range" ng-click="$ctrl.setMonthRange()">Месяц</a>
+		<a class="com-mc-dates__range" ng-click="$ctrl.resetRange()">Все</a>
+	</div>
+</md-content>

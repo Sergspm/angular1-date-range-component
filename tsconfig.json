@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"target": "es2015",
+		"module": "es6",
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"allowJs": true
+	}
+}
